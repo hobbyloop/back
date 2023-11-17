@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "name": "log",
+      "type": "com.multimodule.msa.errorbot.config.LogConfig",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig"
+    },
+    {
+      "name": "log.database",
+      "type": "com.multimodule.msa.errorbot.config.LogConfig$Database",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig"
+    },
+    {
+      "name": "log.slack",
+      "type": "com.multimodule.msa.errorbot.config.LogConfig$Slack",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "log.database.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig$Database"
+    },
+    {
+      "name": "log.level",
+      "type": "ch.qos.logback.classic.Level",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig"
+    },
+    {
+      "name": "log.server-name",
+      "type": "java.lang.String",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig"
+    },
+    {
+      "name": "log.slack.channel",
+      "type": "java.lang.String",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig$Slack"
+    },
+    {
+      "name": "log.slack.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig$Slack"
+    },
+    {
+      "name": "log.slack.user-name",
+      "type": "java.lang.String",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig$Slack"
+    },
+    {
+      "name": "log.slack.web-hook-url",
+      "type": "java.lang.String",
+      "sourceType": "com.multimodule.msa.errorbot.config.LogConfig$Slack"
+    }
+  ],
+  "hints": []
+}

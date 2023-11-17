@@ -1,0 +1,8 @@
+com/multimodule/msa/common/RestDocsConfiguration.java
+ com.multimodule.msa.common.RestDocsConfiguration
+com/multimodule/msa/common/BaseControllerTest.java
+ com.multimodule.msa.common.BaseControllerTest
+com/multimodule/msa/AdminApplicationTests.java
+ com.multimodule.msa.AdminApplicationTests
+com/multimodule/msa/admin/getLockedUsersTest.java
+ com.multimodule.msa.admin.getLockedUsersTest
