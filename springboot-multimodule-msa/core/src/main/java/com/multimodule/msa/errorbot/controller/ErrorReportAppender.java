@@ -110,7 +110,7 @@ public class ErrorReportAppender extends UnsynchronizedAppenderBase<ILoggingEven
 
     fields.add(generateSlackField(
         "Server System OS",
-        errorLog.getSystemInfo().getSystem(),
+        errorLog.getSystemInfo().getSystemDes(),
         true));
 
     fields.add(generateSlackField(

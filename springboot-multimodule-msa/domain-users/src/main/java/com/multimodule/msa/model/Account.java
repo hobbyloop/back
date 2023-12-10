@@ -2,6 +2,7 @@ package com.multimodule.msa.model;
 
 import com.multimodule.msa.authentication.UserRole;
 import com.multimodule.msa.authentication.UserStatus;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -38,5 +39,10 @@ public class Account {
         this.state = state;
         this.refreshToken = refreshToken;
         this.roles = roles;
+    }
+    @Builder
+    public Account(String userId, String password){
+        this.userId = userId;
+        this.password = password;
     }
 }

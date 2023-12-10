@@ -37,6 +37,8 @@ subprojects {
         annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
         compile 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
+//MySQL
+        runtimeOnly 'mysql:mysql-connector-java'
 
 //Security
         implementation 'org.springframework.boot:spring-boot-starter-security'

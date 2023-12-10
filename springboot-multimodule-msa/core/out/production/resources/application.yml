@@ -3,7 +3,7 @@ jwt:
 
 log:
   serverName: "Multimodule"
-  level: ERROR
+  level: DEBUG
   slack:
     enabled: true
     webHookUrl: "slack webhook URL"
@@ -11,3 +11,27 @@ log:
     userName: "[CORE]ErrorReportBot"
   database:
     enabled: true
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hobbyloop?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: wndRjrak614!
+    initialization-mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          format_sql: true
+          show_sql: true
+          highlight_sql: true
+
+
+
+
+
+

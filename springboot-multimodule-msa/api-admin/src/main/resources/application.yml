@@ -2,7 +2,7 @@ jwt:
   secretKey: "This Data Must Be Managed By Secret NOT HERE THIS IS JUST EXAMPLE"
 log:
   serverName: "Admin Server"
-  level: ERROR
+  level: DEBUG
   slack:
     enabled: true
     webHookUrl: "slack webhook URL"
@@ -16,3 +16,24 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hobbyloop?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: '비밀번호 수정하세요'
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          format_sql: true
+          show_sql: true
+          highlight_sql: true
+
+
+
+
+

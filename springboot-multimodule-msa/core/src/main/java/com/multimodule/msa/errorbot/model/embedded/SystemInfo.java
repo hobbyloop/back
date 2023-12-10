@@ -14,8 +14,8 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 public class SystemInfo {
 
-  @Column(name = "SYSTEM", length = 50)
-  private String system;
+  @Column(name = "SYSTEM_DES", length = 50)
+  private String systemDes;
 
   @Column(name = "SERVER_NAME", length = 50)
   private String serverName;
@@ -24,7 +24,7 @@ public class SystemInfo {
   private String hostName;
 
   public SystemInfo(String serverName) {
-    this.system = System.getProperty("os.name");
+    this.systemDes = System.getProperty("os.name");
     this.serverName = serverName;
     try {
       this.hostName = ContextUtil.getLocalHostName();
