@@ -10,10 +10,10 @@ com/multimodule/msa/errorbot/model/ErrorLogs.java
  com.multimodule.msa.errorbot.model.ErrorLogs
 com/multimodule/msa/errorbot/util/RequestWrapper.java
  com.multimodule.msa.errorbot.util.RequestWrapper
-com/multimodule/msa/response/ErrorResponse.java
- com.multimodule.msa.response.ErrorResponse
 com/multimodule/msa/errorbot/config/LogContextConfig.java
  com.multimodule.msa.errorbot.config.LogContextConfig
+com/multimodule/msa/response/ErrorResponse.java
+ com.multimodule.msa.response.ErrorResponse
 com/multimodule/msa/errorbot/util/MdcUtil.java
  com.multimodule.msa.errorbot.util.MdcUtil
 com/multimodule/msa/errorbot/service/ErrorLogService.java

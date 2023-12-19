@@ -1,5 +1,5 @@
-com/multimodule/msa/api/auth/controller/AuthController.java
- com.multimodule.msa.api.auth.controller.AuthController
+com/multimodule/msa/api/user/controller/UserController.java
+ com.multimodule.msa.api.user.controller.UserController
 com/multimodule/msa/api/user/controller/UserExceptionHandler.java
  com.multimodule.msa.api.user.controller.UserExceptionHandler
 com/multimodule/msa/api/auth/request/SignUpRequest.java
@@ -7,19 +7,19 @@ com/multimodule/msa/api/auth/request/SignUpRequest.java
  com.multimodule.msa.api.auth.request.SignUpRequest$SignUpRequestBuilder
 com/multimodule/msa/api/auth/controller/SecurityExceptionHandler.java
  com.multimodule.msa.api.auth.controller.SecurityExceptionHandler
-com/multimodule/msa/api/auth/response/SignInResponse.java
- com.multimodule.msa.api.auth.response.SignInResponse
 com/multimodule/msa/api/auth/request/SignInRequest.java
  com.multimodule.msa.api.auth.request.SignInRequest
  com.multimodule.msa.api.auth.request.SignInRequest$SignInRequestBuilder
+com/multimodule/msa/api/auth/response/SignInResponse.java
+ com.multimodule.msa.api.auth.response.SignInResponse
 com/multimodule/msa/ApiApplication.java
  com.multimodule.msa.ApiApplication
-com/multimodule/msa/api/auth/response/RefreshResponse.java
- com.multimodule.msa.api.auth.response.RefreshResponse
 com/multimodule/msa/api/auth/request/RefreshRequest.java
  com.multimodule.msa.api.auth.request.RefreshRequest
  com.multimodule.msa.api.auth.request.RefreshRequest$RefreshRequestBuilder
+com/multimodule/msa/api/auth/response/RefreshResponse.java
+ com.multimodule.msa.api.auth.response.RefreshResponse
 com/multimodule/msa/configs/SecurityConfig.java
  com.multimodule.msa.configs.SecurityConfig
-com/multimodule/msa/api/user/controller/UserController.java
- com.multimodule.msa.api.user.controller.UserController
+com/multimodule/msa/api/auth/controller/AuthController.java
+ com.multimodule.msa.api.auth.controller.AuthController
