@@ -21,8 +21,7 @@ public class LogController {
     @GetMapping("/error")
     public PagedModel<GetErrorLogsResponse> getErrorLogs(
             Pageable pageable,
-            PagedResourcesAssembler<ErrorLogs> assembler
-    ){
+            PagedResourcesAssembler<ErrorLogs> assembler){
         return assembler.toModel(errorLogService.getErrorLogs(pageable), GetErrorLogsResponse::new);
     }
 }

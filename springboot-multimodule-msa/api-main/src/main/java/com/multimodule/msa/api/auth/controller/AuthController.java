@@ -21,36 +21,28 @@ public class AuthController {
 
     @PostMapping("/signin")
     @ResponseStatus(HttpStatus.OK)
-    public SignInResponse signIn(
-            @RequestBody SignInRequest signInRequest
-    ) {
+    public SignInResponse signIn(@RequestBody SignInRequest signInRequest) {
         JwtTokensDto jwtTokensDto = this.authService.signIn(signInRequest.getId(), signInRequest.getPassword());
         return new SignInResponse(jwtTokensDto);
     }
 
     @PostMapping("/signup")
     @ResponseStatus(HttpStatus.OK)
-    public SignInResponse signUp(
-            @RequestBody SignUpRequest signUpRequest
-    ) {
+    public SignInResponse signUp(@RequestBody SignUpRequest signUpRequest) {
         JwtTokensDto jwtTokensDto = this.authService.signUp(signUpRequest.getId(), signUpRequest.getPassword(), signUpRequest.getName());
         return new SignInResponse(jwtTokensDto);
     }
 
     @GetMapping("/checkid/{userId}")
     @ResponseStatus(HttpStatus.OK)
-    public String idCheck(
-            @PathVariable String userId
-    ) {
+    public String idCheck(@PathVariable String userId) {
         this.authService.checkId(userId);
         return "사용가능한 아이디입니다.";
     }
 
     @PostMapping("/refresh")
     @ResponseStatus(HttpStatus.OK)
-    public RefreshResponse getNewAccessToken(
-            @RequestBody RefreshRequest refreshRequest
-    ) {
+    public RefreshResponse getNewAccessToken(@RequestBody RefreshRequest refreshRequest) {
         JwtTokensDto jwtTokensDto =  this.authService.refreshAccessToken(refreshRequest.getRefreshToken());
         return new RefreshResponse(jwtTokensDto);
     }
